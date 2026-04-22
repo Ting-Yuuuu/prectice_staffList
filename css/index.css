@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bde1f7;
+  width: 100%;
+  height: 80px;
+}
+
+header a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header_text{
+  margin: 0;
+  color: #309442;
+}
+
+/* 內容區 */
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 麵包屑 */
+.breadcrumb{
+  color: #333333;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+/* 標題 */
+.title_block{
+  display: inline-block;
+  padding: 0px 10px;
+  border-left: 3px solid #535353;
+}
+
+.title{
+  color: #828282;
+  margin: 0;
+}
+
+/* 內容 */
+.content{
+  display: block;
+  text-align: center;
+  margin: 10% auto;
+}
+
+.content img{
+  border-radius: 8px;
+}
+
+@media (max-width:500px) {
+  .content img{
+    width: 90%;
+  }
+}
+
+.enter_btn{
+  display: block;
+  text-decoration: none;
+  background-color:#88cbf1 ;
+  color: #fff;
+  padding: 8px;
+  width: 500px;
+  margin: 10px auto;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+@media (max-width:600px) {
+  .enter_btn{
+    width: 350px;
+  }
+}
+
+.enter_btn:hover{
+  background-color: #48b1e8;
+  color: #fff;
+}
