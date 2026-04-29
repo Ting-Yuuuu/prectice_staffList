@@ -23,3 +23,148 @@ header a{
   margin: 0;
   color: #309442;
 }
+
+/* 內容區 */
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 麵包屑 */
+.breadcrumb_block{
+  display: flex;
+  gap: 8px;
+}
+
+.breadcrumb{
+  color: #333333;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+/* 標題 */
+.title_block{
+  display: inline-block;
+  padding: 0px 10px;
+  border-left: 3px solid #535353;
+  margin-bottom: 16px;
+}
+
+.title{
+  color: #828282;
+  margin: 0;
+}
+
+/* 搜尋區塊 */
+.search_block{
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.search label{
+  margin-bottom: 8px;
+}
+
+.search .dropdown{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 8px;
+  border-color: #a9a9a9;
+}
+
+.search input{
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #a9a9a9;
+  outline: none;
+  padding-left: 8px;
+}
+
+/* 新增資料 */
+.add_block{
+  margin-left: auto;
+}
+
+.add_btn{
+  display: block;
+  text-decoration: none;
+  background-color:#88cbf1 ;
+  color: #fff;
+  padding: 8px;
+  width: 250px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.add_btn:hover{
+  background-color: #48b1e8;
+  color: #fff;
+}
+
+.data_block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.data{
+  display: flex;
+}
+
+.data p{
+  margin: 0;
+}
+
+.page{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page p{
+  margin: 0;
+}
+
+i.fa-regular{
+  font-size: 20px;
+  cursor:pointer;
+}
+
+/* 表格 */
+table{
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  width: 100%;
+  text-align: center;
+}
+
+table, th,td{
+  border: 1px solid rgb(127, 127, 127);
+}
+
+thead{
+  border-radius: 12px 12px 0 0;
+}
+
+thead th{
+  padding: 8px;
+  background-color: #b5b4b4;
+  color: #fff;
+}
+
+tbody td{
+  padding: 8px;
+}
