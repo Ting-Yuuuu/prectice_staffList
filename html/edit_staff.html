@@ -29,11 +29,12 @@
     </div>
 
     <!-- 內容區 -->
-    <div class="content">
+    <form class="content">
       <div class="two_block">
         <div class="information">
           <label for="">*ID</label>
           <input type="text" class="" placeholder="001" disabled>
+          <p class="hint">*ID無法變更</p>
         </div>
         <div class="information">
           <label for="">*所屬部門</label>
@@ -42,32 +43,42 @@
             <option value="">1</option>
             <option value="">2</option>
           </select>
+          <p class="hint">*必填</p>
         </div>
       </div>
       <div class="two_block">
         <div class="information">
           <label for="">*員工職務</label>
-          <input type="text" class="" placeholder="001" >
+          <input type="text" class="" placeholder="請輸入職務" >
+          <p class="hint">*必填</p>
         </div>
         <div class="information">
           <label for="">*員工姓名</label>
           <input type="text" class="" placeholder="請輸入姓名" >
+          <p class="hint">*必填</p>
         </div>
       </div>
       <div class="two_block">
         <div class="information">
           <label for="">*電子信箱</label>
           <input type="text" class="" placeholder="請輸入電子信箱" >
+          <p class="hint">*必填 格式為xxxxx@xxxxx.com</p>
         </div>
         <div class="information">
           <label for="">*手機號碼</label>
           <input type="text" class="" placeholder="請輸入手機號碼" >
+          <p class="hint">*必填</p>
         </div>
       </div>
       <div class="information">
         <label for="">*出生年月日</label>
-        <input type="date" class="" placeholder="" >
+        <input type="date" class="date" placeholder="" >
+          <p class="hint">*必填</p>
       </div>
+    </form>
+    <div class="btn_block">
+      <button class="submit">送出</button>
+      <button class="cancel">取消</button>
     </div>
   </div>
 </body>

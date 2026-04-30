@@ -57,15 +57,15 @@ header a{
 
 /* 內容 */
 .content{
-  border: 2px solid lightgray;
+  border: 2px solid #A29D9D;
   border-radius: 12px;
   padding: 40px;
+  margin-bottom: 16px;
 }
 
 .two_block{
   display: flex;
   width: 100%;
-  gap: 16px;
 }
 
 .information{
@@ -80,6 +80,18 @@ header a{
   margin-bottom: 8px;
 }
 
+.information select{
+  width: 70%;
+  height: 35px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #a9a9a9;
+  outline: none;
+  padding-left: 8px;
+  box-sizing: border-box;
+  padding-right: 8px;
+}
+
 .information input{
   width: 70%;
   height: 35px;
@@ -88,4 +100,79 @@ header a{
   border: 1px solid #a9a9a9;
   outline: none;
   padding-left: 8px;
+  box-sizing: border-box;
+}
+
+.information .date{
+  width: 69%;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.hint{
+  color: red;
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+/* 送出取消按鈕 */
+.btn_block{
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: end;
+  gap:8px;
+}
+
+.submit{
+  width: 150px;
+  height: 40px;
+  background-color: #88cbf1;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+}
+
+.submit:hover{
+  background-color: #48b1e8;
+  color: #fff;
+}
+
+.cancel{
+  width: 150px;
+  height: 40px;
+  background-color: #a9a9a9;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+}
+
+.cancel:hover{
+  background-color: #898989;
+}
+
+
+/* RWD */
+@media(max-width:800px){
+  .two_block{
+    flex-direction: column;
+
+  }
+
+  .information{
+    width: 100%;
+  }
+
+  .information input{
+    width: 100%;
+  }
+
+  .information select{
+    width: 100%;
+  }
+
+  .information .date{
+    width: 100%;
+  }
 }
