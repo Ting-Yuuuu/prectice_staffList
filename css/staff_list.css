@@ -197,6 +197,26 @@ tbody td{
   padding: 8px;
 }
 
+.tool{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  height: fit-content;
+}
+
+.tool i{
+  font-size: 16px;
+  cursor: pointer;
+}
+
+td a{
+  text-decoration: none;
+  color: #333333;
+  display: block;
+}
+
 /* RWD */
 @media(max-width:800px){
   .search_block{

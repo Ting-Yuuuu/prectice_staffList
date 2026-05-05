@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/staff_list.css">
+  <script src="../js/staff_list.js"></script>
   <script src="https://kit.fontawesome.com/224e3a1241.js" crossorigin="anonymous"></script>
   <title>員工列表</title>
 </head>
@@ -59,7 +60,7 @@
           <div class="data_block">
             <div class="data">
               <p>資料筆數：</p>
-              <p>13</p>
+              <p class="total_list"></p>
             </div>
             <div class="page">
               <i class="fa-regular fa-circle-left"></i>
@@ -73,7 +74,7 @@
 
     <!-- 表格 -->
     <div class="table_block">
-      <table>
+      <table class="staff_table">
         <thead>
           <tr>
             <th>ID</th>
@@ -87,16 +88,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><a href="../html/edit_staff.html">1</a></td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-          </tr>
+          <!-- 從js加入 -->
         </tbody>
       </table>
     </div>
