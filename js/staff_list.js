@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded',function(){
+// 建立員工資料
   const staff_list = [
     {
      id: '1', 
@@ -48,8 +48,12 @@ document.addEventListener('DOMContentLoaded',function(){
     },
   ];
 
+  // 將員工資料放進表格中
+  function staff_data(){
   // 要放進tbody裡面
   const staff_table = document.querySelector('.staff_table tbody');
+  // 要先將表格清空
+  staff_table.innerHTML = '';
 
   staff_list.forEach(function(item){
     const content = `
@@ -64,20 +68,37 @@ document.addEventListener('DOMContentLoaded',function(){
           <td>
             <div class="tool">
               <i class="fa-solid fa-pen"></i>
-              <i class="fa-regular fa-trash-can"></i>
+              <i class="fa-regular fa-trash-can delete_btn"></i>
             </div>
           </td>
         </tr>
       `
     staff_table.insertAdjacentHTML('beforeend',content);
   })
-})    
+}    
+
+// 頁面載入時 呼叫一次
+document.addEventListener('DOMContentLoaded',function(){
+  staff_data(staff_list);
+  count_list();
+})
 
 // 計算資料數量
-document.addEventListener('DOMContentLoaded',function(){
-  const total_list = document.querySelector('.total_list');
-  const list_item = document.querySelectorAll('tbody .list_item');
-  const total = list_item.length;
+  function count_list(){
+    const total_list = document.querySelector('.total_list');
+    const list_item = document.querySelectorAll('tbody .list_item');
+    const total = list_item.length;
 
-  total_list.innerText = total;
-})
+    total_list.innerText = total;
+  }
+
+// document.addEventListener('DOMContentLoaded',function(){
+
+//   document.querySelectorAll('.delete_btn').forEach(function(delete_item){
+//     delete_item.addEventListener('click',function(el){
+//       const item = el.closest('tr');
+
+//       item.classList.remove();
+//     })
+//   })
+// })
